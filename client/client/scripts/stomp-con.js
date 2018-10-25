@@ -2,7 +2,7 @@
         Stomp connection config
 *************************************/
 // define socket url 
-var url = "ws://localhost:61614/stomp";
+var url = env.STOMP_URL;
 var client = Stomp.client(url);
 
 function connect() {

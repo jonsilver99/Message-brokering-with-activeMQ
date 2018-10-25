@@ -3,7 +3,7 @@
 
 class QueueHandler extends StaticClass
 {
-    private static $Broker_uri = 'tcp://localhost:61613';
+    private static $Broker_uri = BROKER_URI;
     private static $Queue = '/queue/notes';
     private static $NewNotes = [];
 

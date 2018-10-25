@@ -77,6 +77,7 @@
         <script src="client/libs/jquery.js"></script>
 
         <!-- my scripts -->
+        <script src="client/scripts/env.js"></script>
         <script src="client/scripts/stomp-con.js"></script>
         <script src="client/scripts/Note.js"></script>
         <script src="client/scripts/validator.js"></script>

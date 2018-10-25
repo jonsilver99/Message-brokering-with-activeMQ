@@ -3,3 +3,4 @@
 
 /client/.vscode
 /client/env_vars.php
+/client/client/scripts/env.js
