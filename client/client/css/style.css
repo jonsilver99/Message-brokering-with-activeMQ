@@ -1,0 +1,184 @@
+/*******************
+    GENERAL
+*******************/
+* {
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 18px;
+}
+
+
+/*costume scrollbar*/
+::-webkit-scrollbar {
+    width: 0.35rem;
+}
+ 
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    height: 90%;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background-color: #f36e6e;
+  outline: 1px solid slategrey;
+}
+
+
+body {
+    background: wheat url("../assets/Board.jpg") ;
+    background-size: cover;
+    font-family: "Bree Serif", serif;
+    position: relative;
+}
+
+header{
+    text-align: center;
+}
+
+h1{
+    font-weight: bold;
+    background: rgba(245, 222, 179, 0.7);
+    margin: 0;
+    padding: 20px;
+}
+
+#mainSheet{
+    min-width: 1080px;
+    margin: 0 auto;
+    padding: 20px 20px 30px;
+}
+
+
+/*******************
+    Note Form 
+*******************/
+form{
+    background: white url("../assets/form.jpg") 0 0 ;
+    background-size: 100% 100%;    
+    padding: 0 20px;
+}
+
+form button{
+    font-family: "Bree Serif", serif;
+    margin: 5px 0;
+    background: #f5caca;
+    color: purple;
+    border: 1px solid purple;
+}
+
+fieldset{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+label,
+input[type="date"],
+input[type="time"],
+textarea {
+    background:none;
+    border: 0;
+    font-family: "Bree Serif", serif;
+}
+
+label,
+input[type="time"],
+input[type="date"]{
+    display: inline-block;
+    color: red;
+    font-size: 1.1rem;
+    margin: 0;
+    text-align: center;
+}
+
+textarea{
+    display: block;
+    padding: 0;
+
+}
+
+
+/*******************
+    Pinned notes
+*******************/
+
+div.pinned {
+    position: relative;
+    float: left;
+    width: 336px;
+    height: 392px;
+    margin: 20px 15px 5px 15px ;
+    background:  url("../assets/Note.png") 0 0;
+    padding: 45px 20px 10px;
+    opacity: 0;
+}
+
+div.pinned p {
+    max-height: 240px;
+    overflow: hidden;
+}
+
+/*show scrollbar on hover*/
+div.pinned p:hover {
+    max-height: 240px;
+    overflow-y:  auto;
+}
+
+/*Animate pinned note to fade in*/
+div.fadeIn{
+    animation: fadein 1.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/*Animate deleted note to fade out*/
+div.fadeOut{
+    animation: fadeout 1.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeout {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/*pinned note delete button*/
+div.pinned Button {
+    display: none;
+    position: absolute;
+    top: 25px ;
+    right: 15px;
+    width: 25px;
+    height: 24px;
+    background: url("../assets/delButton.png");
+    border: 0 ;
+}
+
+div.pinned:hover > button {
+    display: block;
+}
+
+.popup{
+    position: absolute;
+    width: 30%;
+    top:25%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5e171;
+    box-shadow: -2px -2px 5px black;
+}

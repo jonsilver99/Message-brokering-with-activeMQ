@@ -1,0 +1,5 @@
+/server/.vscode
+/server/env_vars.php
+
+/client/.vscode
+/client/env_vars.php
