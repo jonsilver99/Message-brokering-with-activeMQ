@@ -28,6 +28,6 @@ A javscript client app sends messages (data) to a queue on activeMQ, while anoth
 - Client app will poll db every 5 seconds and update all newly inserted notes on dom
 
 
-### Note: the server app doesnt poll and needs to be refreshed to read new messages on queue 
+#### Note: the server app doesnt poll and needs to be refreshed to read new messages on queue 
 
-### access activeMQ console at localhost:8161 (while its up and running) 
+#### access activeMQ console at localhost:8161 (while its up and running) 
